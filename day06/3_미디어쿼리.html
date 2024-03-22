@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            :root {
+                /* theme */
+                --primary-color: #000;
+                --secondary-color: #fff;
+                --font-color: #fff;
+                --font-sub-color: #999;
+                --font-error: #f00;
+
+                /* pallette */
+                --gray-100: #e9e9e9;
+                --gray-200: #d9d9d9;
+
+                /* font */
+                --small-font: 12px;
+                --medium-font: 16px;
+                --big-font: 24px;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            header {
+                height: 48px;
+                background-color: var(--primary-color);
+                color: var(--font-color);
+                font-size: var(--big-font);
+            }
+
+            main {
+                display: flex;
+                height: 100vh;
+            }
+
+            main > aside {
+                background-color: #f00;
+                height: 100%;
+                width: 480px;
+            }
+
+            footer {
+                padding: 32px;
+                background-color: var(--primary-color);
+                color: var(--font-color);
+            }
+
+            /* 
+            mobile: 345px ~ 767px (s, m, l)
+            tablet: 768px ~ 1279px (s, m, l)
+            desktop: 1280px ~ (s, m, l)
+            */
+
+            /* 
+            유형
+            all
+            * screen
+            print
+            speech
+            */
+
+            /* ~768px(max) */
+            @media screen and (max-width: 768px) {
+                header {
+                    font-size: var(--medium-font);
+                    text-align: center;
+                }
+
+                main > aside {
+                    display: none;
+                }
+            }
+
+            /* 769 ~ 1280 */
+            @media screen and (min-width: 769px) and (max-width: 1280px) {
+                main > aside {
+                    width: 280px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>HEADER</header>
+        <main>
+            <aside></aside>
+            <section></section>
+        </main>
+        <footer>Corp @. Hyun</footer>
+    </body>
+</html>

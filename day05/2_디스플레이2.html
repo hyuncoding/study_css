@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>display</title>
+        <style>
+            div {
+                background-color: #333;
+                color: #fff;
+                margin: 16px;
+            }
+
+            .display {
+                display: none;
+            }
+
+            .visibility {
+                visibility: hidden;
+            }
+
+            .opacity {
+                opacity: 0;
+            }
+
+            /* 
+            display: none
+            (영역x, 클릭x)
+
+            visiblity: hidden
+            (영역o, 클릭x)
+
+            opacity: 0 ( 투명도 0~1 )
+            (영역o, 클릭o)
+
+            *주의
+                opacity는 안에 있는 내용물도 투명하게 만들기 때문에
+                배경을 투명하게 만들 때는 rgba를 쓰는 게 맞다.
+            */
+
+            button {
+                padding: 16px;
+                /* background-color: transparent; 투명색 */
+                background-color: red;
+                color: #fff;
+                cursor: pointer;
+                border-radius: 8px;
+            }
+
+            button:hover {
+                /* background-color: red; */
+                opacity: 0.7;
+            }
+
+            button:disabled {
+                background-color: #d9d9d9;
+                color: #333;
+                opacity: 0.7;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>display: none</p>
+            <p class="display">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla cum neque quaerat corporis vero pariatur
+                ipsam possimus fuga omnis natus. Ratione alias ipsum voluptates quo inventore eveniet. Animi, est
+                deleniti.
+            </p>
+        </div>
+        <div>
+            <p>visibility: hidden</p>
+            <p class="visibility">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla cum neque quaerat corporis vero pariatur
+                ipsam possimus fuga omnis natus. Ratione alias ipsum voluptates quo inventore eveniet. Animi, est
+                deleniti.
+            </p>
+        </div>
+        <div>
+            <p>opacity: 0</p>
+            <p class="opacity">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla cum neque quaerat corporis vero pariatur
+                ipsam possimus fuga omnis natus. Ratione alias ipsum voluptates quo inventore eveniet. Animi, est
+                deleniti.
+            </p>
+        </div>
+        <button>로그인</button>
+    </body>
+</html>

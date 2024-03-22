@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS 텍스트4</title>
+        <style>
+            .content {
+                border: 3px dotted #f00;
+                width: 600px;
+                padding: 10px;
+                white-space: nowrap;
+                /* 줄바꿈, 기본값 wrap */
+                /* white-space: pre */
+                overflow: hidden;
+                /* 기준 요소를 넘어갔을 때 요소의 디스플레이 */
+                text-overflow: ellipsis;
+                /* 말줄임표 */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            &lt - <
+            &gt - >
+            &nbsp; - 띄어쓰기
+            <br/> - 줄바꿈
+        -->
+        <p class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. &nbsp; Minus voluptatem accusamus <br />laboriosam?
+            &lt; &gt;Laudantium sed maiores quod omnis, error laboriosam magni nobis tempore delectus harum iusto hic,
+            inventore pariatur quidem? Voluptates?
+        </p>
+    </body>
+</html>

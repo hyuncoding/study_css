@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전체 선택자</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            color: brown;
+        }
+
+        h1 {
+            color: blue;
+            /* 주석 : 같은 우선순위의 선택자가 나오면 나중에 나온 선택자가 덮어 씌워진다. */
+        }
+    </style>
+</head>
+<body>
+    <h1>전체 선택자</h1>
+    <h1>요소 선택자</h1>
+    <p>다른 선택자보다 우선 순위가 낮다</p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 98);
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* 
+    겹치는 요소에
+    z-index를 통해 우선순위를 부여할 수 있음
+    z-index의 값이 높을 수록 해당 요소가 위에 위치
+
+    확장성을 위해 z-index는 보통 100~1000 단위로 부여
+    */
+}
+/* footer */
+footer {
+    height: 300px;
+    background-color: #d9d9d9;
+}

@@ -1,0 +1,16 @@
+.w400 {
+    width: 400px;
+}
+
+.w800 {
+    width: 800px;
+}
+
+.h200 {
+    height: 200px;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}

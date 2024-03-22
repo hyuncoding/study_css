@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>그라데이션</title>
+        <style>
+            body {
+                background-color: black;
+            }
+
+            div {
+                width: 360px;
+                height: 148px;
+                border-radius: 16px;
+            }
+
+            .gradient-1 {
+                background: linear-gradient(
+                    to top left,
+                    transparent 10%,
+                    red,
+                    orange,
+                    yellow,
+                    green,
+                    blue,
+                    navy,
+                    violet
+                );
+            }
+
+            .gradient-2 {
+                background: radial-gradient(ellipse at top right, #f00, #000 60%);
+            }
+            /* 원형이나, 직선 방향 등을 마음대로 설정하여 색상을 자연스럽게 섞이게 만듦
+            transparent (투명색)
+            */
+        </style>
+    </head>
+    <body>
+        <div class="gradient-1"></div>
+        <div class="gradient-2"></div>
+    </body>
+</html>

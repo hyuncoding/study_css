@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*example*/
+        /*header start*/
+        header {
+            text-align: center;
+        }
+        /*header end*/
+        /*container start*/
+        .small-font {
+            font-size: 12px;
+            /* 기본 폰트 크기는 16px(사용자의 브라우저 옵션 설정) */
+        }
+
+        .big-font {
+            font-size: 24px;
+        }
+
+        .red-text {
+            color: red;
+        }
+
+        .blue-text {
+            color: blue;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        #red-text {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>ID/CLASS</h2>
+    <p class="small-font red-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, eius dolores? 
+        Dolore nihil reiciendis molestias tempora <span class="big-font font-bold">quia corporis rerum voluptatem?</span>
+        Praesentium, quo quod blanditiis veritatis dignissimos atque vero placeat ratione.
+    </p>
+    <p id="red-text" class="big-font blue-text font-bold">
+        <!--
+            class는 여러 개 class의 부여가 가능하고
+            뒤에 오는 class 속성이 이전의 속성을 덮어 씌운다.
+
+            id 선택자는 class 선택자보다 우선 순위가 높다.
+
+            향후, 자바스크립트를 이용해 class를 추가하여 css 변경을 일으킬 수 있으므로
+            보통은 css를 class 선택자로 많이 부여한다.
+
+            id는 이름을 부여해주거나 향후 js 사용 시에 이용한다.
+            아니면 인라인스타일로 css를 변경할 때 사용할 수도 있다.
+        -->
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ad doloribus at 
+        tempora laudantium. <span class="small-font">Odit placeat maiores assumenda</span>, 
+        eum facere minus porro, praesentium maxime nulla sapiente officiis! Culpa, recusandae mollitia!
+    </p>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                list-style: none;
+            }
+
+            .flex {
+                display: flex;
+                width: 800px;
+                height: 300px;
+                border: 3px solid #00f;
+            }
+
+            ul.flex {
+                justify-content: center; /*수평*/
+                align-items: center; /*수직*/
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+
+            ul.flex > li {
+                width: 100px;
+                border: 1px solid #000;
+                background-color: yellow;
+            }
+
+            div.flex {
+                flex-wrap: wrap;
+                justify-content: space-around; /* 주변에 동일한 여백 */
+                justify-content: space-between;
+                justify-content: space-evenly; /* 요소들 사이에 동일한 여백 */
+                align-content: center;
+                flex-direction: column;
+
+                /*
+                align-content 
+                    flex: wrap 된 요소의
+                    부모 요소만큼 높이를 당기는 stretch 값을 수정하여
+                    요소에 내가 원하는 크기의 높이 부여 가능
+                */
+
+                /* 
+                between : 요소들 사이에 동일 여백 (시작과 끝은 부모요소의 양끝에 붙인다)
+                around : 각 요소들 주변에 동일한 여백
+                evenly : 요소들 사이에 동일 여백
+                */
+            }
+
+            div.flex > div {
+                min-width: 28%;
+                height: 100px;
+                background-color: orange;
+                border: 1px solid #000;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>디스플레이 플렉스</h2>
+        <ul class="flex">
+            <li>content_1</li>
+            <li>content_2</li>
+            <li>content_3</li>
+            <li>content_4</li>
+        </ul>
+        <div class="flex">
+            <div>content_1</div>
+            <div>content_2</div>
+            <div>content_3</div>
+            <div>content_4</div>
+        </div>
+    </body>
+</html>

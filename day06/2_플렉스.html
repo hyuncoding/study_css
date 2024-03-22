@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            header {
+                height: 80px;
+                background-color: deepskyblue;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            header > ul {
+                display: flex;
+            }
+
+            header > ul > li:first-of-type::after {
+                content: "|";
+            }
+
+            ul > li {
+                list-style: none;
+            }
+
+            footer {
+                height: 280px;
+                background-color: #f1f1f1;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: calc(100vh - 80px - 280px);
+            }
+
+            main > div > h2 {
+                text-align: center;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+            과제
+
+            1. 해당 화면이 사용자 뷰포트에 맞도록 한 화면에 가득차야함
+            2. footer는 항상 맨 아래 위치, 내부의 텍스트 역시
+               맨 아래의 가운데 정렬 되어있어야 한다.
+            3. 회원가입 form 요소는 main 요소의 수직 수평 가운데 위치
+               내부에 있는 form 요소 역시 부모요소 기준 가운데 정렬 되어야 한다.
+
+            4. header의 경우 LOGO와 로그인 회원가입이 양끝에 떨어져 있어야하며
+               로그인과 회원가입 사이에는 " | "가 있어야한다.
+
+         -->
+        <header>
+            <div>LOGO</div>
+            <ul>
+                <li>로그인</li>
+                <li>회원가입</li>
+            </ul>
+        </header>
+        <main>
+            <div>
+                <h2>회원가입</h2>
+                <form action="" style="width: 280px; background-color: blue">
+                    <p><input type="text" /></p>
+                    <p><input type="text" /></p>
+                    <p><input type="text" /></p>
+                    <button>회원가입</button>
+                </form>
+            </div>
+        </main>
+        <footer>FOOTER</footer>
+    </body>
+</html>

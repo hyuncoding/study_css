@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Noto;
+    src: url("../aseets/font/NotoSansKR-Regular.otf");
+}
+
+* {
+    font-family: "Noto";
+    font-weight: 400;
+    /* 기본크기 400 */
+    /* 100 ~ 900, 700(bold), border, lighter */
+    font-weight: 400;
+    font-size: 50px;
+}

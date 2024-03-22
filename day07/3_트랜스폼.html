@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            div {
+                width: 300px;
+                height: 200px;
+                margin: 16px;
+                border: 1px solid #000;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            #scale:hover {
+                transform: scale(1.5); /* 확대 */
+                transform: scale(0.5); /* 축소 */
+                transform: scaleX(-1); /* 좌우반전 */
+                transform: scaleY(-1); /* 상하반전 */
+            }
+
+            #translate:hover {
+                transform: translateX(50%);
+                transform: translateX(1200px);
+                transform: translateX(-50%);
+                transform: translate(-50%, -50%);
+            }
+
+            #rotate:hover {
+                transform: rotate(90deg);
+                transform: rotate(180deg);
+                transform: rotate(360deg);
+                transform: rotate(720deg);
+                transform: rotateY(180deg);
+                transform: rotateX(180deg) rotateY(180deg); /* z축도 존재한다 */
+                transform: perspective(50px) rotateY(180deg); /* perspective: 사용자와의 거리 */
+            }
+
+            #skew:hover {
+                transform: skew(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="scale">안녕하세요</div>
+        <div id="translate"></div>
+        <div id="rotate">반갑습니다</div>
+        <div id="skew"></div>
+    </body>
+</html>

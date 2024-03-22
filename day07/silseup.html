@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            header {
+                font-size: 16px;
+                color: #000;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container {
+                padding: 0 5px;
+                height: 100vh;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            main > div {
+                border: 1px solid #000;
+                display: flex;
+                color: #fff;
+                text-shadow: 2px 2px #000;
+                justify-content: flex-end;
+                align-items: flex-end;
+                font-size: 24px;
+                padding: 20px 10px;
+                margin: 5px 10px;
+            }
+
+            #rice {
+                background: url("./assets/img/dish1.jpg") no-repeat center / cover;
+            }
+
+            #soup {
+                background: url("./assets/img/dish2.jpg") no-repeat center / cover;
+            }
+
+            #side {
+                background: url("./assets/img/dish3.jpg") no-repeat center / cover;
+            }
+
+            #ilpum {
+                background: url("./assets/img/dish4.jpg") no-repeat center / cover;
+                grid-column: 1 / 3;
+            }
+
+            #drink {
+                background: url("./assets/img/dish5.jpg") no-repeat center / cover;
+            }
+
+            footer {
+                font-size: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 80px;
+            }
+
+            @media screen and (min-width: 769px) and (max-width: 1280px) {
+                .container {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                #ilpum {
+                    grid-column: 2 / 3;
+                }
+
+                #drink {
+                    grid-column: 1 / 3;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .container {
+                    grid-template-columns: 1fr;
+                }
+
+                .container {
+                    height: 400vh;
+                }
+
+                #ilpum {
+                    grid-column: 1 / 2;
+                }
+
+                #drink {
+                    grid-column: 1 / 2;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>솔로의 식탁</header>
+        <main class="container">
+            <div id="rice">밥/죽</div>
+            <div id="soup">국/찌개</div>
+            <div id="side">반찬</div>
+            <div id="ilpum">일품요리</div>
+            <div id="drink">음료/칵테일</div>
+        </main>
+        <footer>솔로의 식탁</footer>
+    </body>
+</html>

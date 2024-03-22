@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>테두리</title>
+        <style>
+            input {
+                border: none;
+                border: 1px solid #999;
+                height: 80px;
+                box-sizing: border-box;
+                border-radius: 8px;
+                margin-right: 16px;
+                padding-left: 16px;
+                outline: none;
+            }
+
+            button {
+                height: 80px;
+                width: 120px;
+                padding: 8px 16px;
+                background-color: rgb(105, 217, 255);
+                color: #fff;
+                font-weight: bold;
+                cursor: pointer;
+                border: none;
+                border-radius: 50%;
+            }
+
+            button:hover {
+                opacity: 0.7;
+            }
+
+            div {
+                border: 1px solid #f00;
+                border: 10px dashed #f00;
+                border: 10px dotted #f00;
+                border: 10px double #f00;
+            }
+        </style>
+    </head>
+    <body>
+        <input /><button>로그인</button>
+        <div>안녕하세요</div>
+        <table border="1" style="border-collapse: collapse">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>조회수</th>
+                </tr>
+            </thead>
+        </table>
+    </body>
+</html>
